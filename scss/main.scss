@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;900&display=swap');
+@import 'hero.btm';
+@import 'header';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//將抓取到的背景圖至中
+body {
+    height: 100vh;
+    width: auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: '微軟正黑體', sans-serif;
+}
