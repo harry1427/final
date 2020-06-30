@@ -12,6 +12,9 @@
    使用[Font Meme](https://fontmeme.com/star-wars-font/)製作類似star wars的字體。
 
 ## 主要的網頁
+網頁的外觀主要是參考[Google Earth](https://www.google.com/intl/zh-TW/earth/#main)，因為我認為他看起來乾淨整潔。
+
+在footer中加入copyrigth的告示，且使用new Date抓取當年的西元數字，以便每年隨時更新。
 
 ## 遇上的問題
 
@@ -19,6 +22,7 @@
    
    2. three.js中load插入的圖片就算已去背，在網頁中還是會有不透明的背景，造成星星是方形的形狀，而非單純的圓型，這點卡了我半天，我上網找資料，但因為大多是英文且是我還不是很熟悉的three.js性質，所以沒有弄清，最終在一部講解three.js的影片中找到解決方法，直接在load的funtion下加入"transparent:true"即可去背。
    3. 如果只是在htnl上加入div，會發生div的物件被canvas覆蓋的情形，想要在canvas上顯示div物件就需要加入position:absolute的性質，才可以顯示div物件。
+   4. 我想使用iframe外插youtube上的影片，不過在網頁上會顯示無法播放影片，上網查到的解釋是說影片的擁有人並未開放使用嵌入功能，最終我是選擇另一部效果較差的影片貼在網頁上。。
 
 
 
