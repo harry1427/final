@@ -5,6 +5,7 @@ $.getJSON("https://api.nasa.gov/planetary/apod?api_key=awdjSLpdm9HXLdMUAbDCMQc7O
         var bgimg = getdata.hdurl
         console.log(bgimg)
         $("#bg").css('background-image', 'url(' + bgimg + ')');
+
     }
 );
 //intro的展開和關閉
@@ -50,6 +51,17 @@ $(function () {
     $('.closeIntro4').on('click', function () {
         $popup4.addClass(HIDE_CLASS);
     });
+
+    $('#intro-btn5').on('click', function () {
+        $popup5.removeClass(HIDE_CLASS);
+
+    });
+
+    $('.closeIntro5').on('click', function () {
+        $popup5.addClass(HIDE_CLASS);
+    });
+
+
 });
 
 //copyright時間更新
@@ -61,29 +73,3 @@ $(function () {
         $(this).append('<p>Copyright &copy;' + $year + ' Huang Hsiang Ming</p>');
     })
 });
-
-
-
-
-/*$("#blur").click(function () {
-    $("#popup").show();
-});
-
-$("").click(function () {
-    $("").hide();
-});*/
-/*function toggle() {
-    var blur = document.getElementById('blur');
-    blur.classList.toggle('active')
-}*/
-/*$(document).ready(function (toggle()) {
-   
-    var blur = $("#blur")
-    blur.classList.toggle('active')
-});*/
-/*$(document).ready(function () {
-    $("#blur").click(function () {
-        var blur = $('#blur');
-        $("h2").toggle();
-    });
-});*/

@@ -37,9 +37,12 @@ function init() {
 }
 
 $(window).resize(function () {
-    camera.aspect = window.innerWidth / window.innerHeight; //使用者可見整個場景物件改變大小
-    camera.updateProjectionMatrix(); //更新投影矩陣
-    renderer.setSize(window.innerWidth, window.innerHeight); //呈現器改變介面大小
+    //使用者可見整個場景物件改變大小
+    camera.aspect = window.innerWidth / window.innerHeight;
+    //更新投影矩陣
+    camera.updateProjectionMatrix();
+    //呈現器改變介面大小
+    renderer.setSize(window.innerWidth, window.innerHeight);
 });
 
 function animate() {
