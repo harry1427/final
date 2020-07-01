@@ -3,8 +3,13 @@ $.getJSON("https://api.nasa.gov/planetary/apod?api_key=awdjSLpdm9HXLdMUAbDCMQc7O
     function (getdata) {
         console.log(getdata);
         var bgimg = getdata.hdurl
-        console.log(bgimg)
-        $("#bg").css('background-image', 'url(' + bgimg + ')');
+        if (bgimg === undefined) {
+            $("#bg").css('background-image', 'url(image/blackhole.jpg)');
+        } else {
+            console.log(bgimg)
+            $("#bg").css('background-image', 'url(' + bgimg + ')');
+        };
+
 
     }
 );
@@ -14,6 +19,7 @@ $(function () {
     var $popup2 = $('#popup2');
     var $popup3 = $('#popup3');
     var $popup4 = $('#popup4');
+    var $popup5 = $('#popup5');
     var HIDE_CLASS = 'is-hide';
 
     $('#intro-btn1').on('click', function () {

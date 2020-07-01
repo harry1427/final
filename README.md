@@ -24,10 +24,10 @@
 ## 三、遇上的問題
 
    1. 在製作start的space wrap效果時，我想試著three.js的cnavas中加入背景圖，不過發現只是使用css的background性質無法顯示，背景圖片總會被canvas覆蓋，如果想加入一張星空之類的照片當作背景，似乎需要修改three.js的texture性質，所以最終放棄這個想法。
-   
    2. three.js中load插入的圖片就算已去背，在網頁中還是會有不透明的背景，造成星星是方形的形狀，而非單純的圓型，這點卡了我半天，我上網找資料，但因為大多是英文且是我還不是很熟悉的three.js性質，所以沒有弄清，最終在一部講解three.js的影片中找到解決方法，直接在load的funtion下加入"transparent:true"即可去背。
    3. 如果只是在html上加入div，會發生div的物件被canvas覆蓋的情形，想要在canvas上顯示div物件就需要加入position:absolute的性質，才可以顯示div物件。
    4. 我想使用iframe外插youtube上的影片，不過在網頁上會顯示無法播放影片，上網查到的解釋是說影片的擁有人並未開放使用嵌入功能，最終我是選擇另一部效果較差的影片貼在網頁上。
+   5. nasa的每日一圖有時會是影片，並非圖片，所以我在發現後，在城市中洩入if else當我設定的var無法從json中抓舉到圖片檔時(undefined)，會另行抓取另一張圖片。
 
 
 ## 四、心得
